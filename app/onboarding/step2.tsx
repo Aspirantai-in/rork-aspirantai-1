@@ -25,7 +25,7 @@ export default function OnboardingStep2() {
 
         <View style={styles.textContainer}>
           <Text style={styles.title}>
-            {ONBOARDING_STEPS[1]?.title || "Master Your News. Master Your Exam."}
+            {ONBOARDING_STEPS[1] && ONBOARDING_STEPS[1].title ? ONBOARDING_STEPS[1].title : "Master Your News. Master Your Exam."}
           </Text>
 
           <View style={styles.bulletContainer}>
